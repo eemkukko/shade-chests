@@ -141,6 +141,7 @@ public class ShadeChestsPlugin extends Plugin
 	protected void shutDown() throws Exception
 	{
 		chestsToHighlight.clear();
+		overlayManager.remove(shadeChestsOverlay);
 	}
 
 	@Subscribe
